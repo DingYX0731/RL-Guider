@@ -7,6 +7,5 @@ Authors: Xufeng Liu<sup>\*</sup>, Yixuan Ding<sup>\*</sup>, Jingxiang Qu, Yichi 
 <sup>\*</sup> Equal contribution<br>
 <sup>+</sup> Equal advising
 
-<p align="center">
-  <img src="figure/main_fig.pdf" /> 
-</p>
+<embed src="./figure/main_fig.pdf" width="800px" height="600px" type="application/pdf">
+
