@@ -8,5 +8,5 @@ Authors: Xufeng Liu<sup>\*</sup>, Yixuan Ding<sup>\*</sup>, Jingxiang Qu, Yichi 
 <sup>+</sup> Equal advising
 
 <p align="center">
-  <img src="figure/pipeline.png" /> 
+  <img src="figure/main_fig.pdf" /> 
 </p>
