@@ -98,7 +98,7 @@ Run RL Guider
 </summary>
 
 ```bash
-python train_rl_smiles.py --task_id=101 --replay_buffer_name='general_replay_buffer_mol_epi_2' --constraint='strict' --reward_type='add' --a=1 --b=1 --c=0 --tau=0.01
+python run_planner_tree.py --conversational_LLM='deepseek' --depth=3 --num_generate=1 --num_keep=1 --num_of_mol=200 --task_id=101 --planner='baseline' --constraint='strict' --conversation_type='single'
 ```
 </details>
 
