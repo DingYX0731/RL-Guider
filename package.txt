@@ -1,0 +1,24 @@
+openai
+numpy
+pandas
+lmdb
+rdkit
+Levenshtein
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+modelscope
+packaging
+mhcflurry
+transformers
+nest_asyncio
+matplotlib
+accelerate
+
+
+and then
+
+cd rl_guider
+
+python download.py
+
+mhcflurry-downloads fetch models_class1_presentation
+mv mhcflurry-downloads path models_class1_presentation Data/peptide/models_class1_presentation

@@ -1,0 +1,20 @@
+python gather_buffer_smiles.py
+
+python process_buffer_smiles.py --replay_buffer_name='general_replay_buffer_mol_epi_2'
+
+python train_rl_smiles.py --task_id=101 --replay_buffer_name='general_replay_buffer_mol_epi_2' --constraint='strict' --reward_type='add' --a=1 --b=1 --c=0 --tau=0.01
+
+python run_planner_tree.py --conversational_LLM='deepseek' --depth=3 --num_generate=1 --num_keep=1 --num_of_mol=200 --task_id=101 --planner='baseline' --constraint='strict' --conversation_type='single'
+
+python run_planner_tree.py --conversational_LLM='deepseek' --depth=3 --num_generate=1 --num_keep=1 --num_of_mol=200 --task_id=101 --planner='rl_planner' --constraint='strict' --conversation_type='multi' --rl_model_path='results/rl_model_checkpoint/reward_type_add_a1.0_b1.0_c0.0_tau0.01general_replay_buffer_mol_epi_2_strict_101_best_reward_v1.pth'
+
+
+
+python gather_buffer_peptide.py
+
+python process_buffer_peptide.py --replay_buffer_name='general_replay_buffer_peptide_301_epi_2'
+
+python train_rl_peptide.py --task_id=301 --replay_buffer_name='general_replay_buffer_peptide_301_epi_2' --constraint='strict' --reward_type='add' --a=1 --b=1 --c=0 --tau=0.01
+
+python run_planner_tree.py --conversational_LLM='deepseek' --depth=3 --num_generate=1 --num_keep=1 --num_of_mol=200 --task_id=301 --planner='rl_planner' --constraint='strict' --conversation_type='single' --rl_model_path='results/rl_model_checkpoint/reward_type_add_a1.0_b1.0_c0.0_tau0.01general_replay_buffer_peptide_301_epi_2_strict_301_best_reward_v1.pth' --data_path="/root/rl_guider/Data/peptide/peptide_editing.json"
+
