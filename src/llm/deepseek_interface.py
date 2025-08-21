@@ -11,11 +11,13 @@ from typing import Union
 global deepseek_client
 deepseek_client = None
 
+API_KEY = "YOUR-API-KEY"
+
 def init_deepseek():
     from openai import AsyncOpenAI
     global deepseek_client
     if deepseek_client is None:
-        deepseek_client = AsyncOpenAI(api_key="YOUR-API-KEY", base_url="https://api.lkeap.cloud.tencent.com/v1",)
+        deepseek_client = AsyncOpenAI(api_key=API_KEY, base_url="https://api.lkeap.cloud.tencent.com/v1",)
         # print("Client Successfully Initialized...")
 
 async def parallel_deepseek_text_completion(
