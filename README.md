@@ -96,7 +96,7 @@ You can check 'log' for detailed editing recording.
 
 If you find this work helpful, please cite our paper:
 
-```latex
+```bibtex
 @inproceedings{liu-etal-2025-rl,
     title = "{RL}-Guider: Leveraging Historical Decisions and Feedback for Drug Editing with Large Language Models",
     author = "Liu, Xufeng  and Ding, Yixuan  and Qu, Jingxiang  and Zhang, Yichi  and Gao, Wenhan  and Liu, Yi",
