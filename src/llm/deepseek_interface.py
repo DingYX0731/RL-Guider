@@ -15,7 +15,7 @@ def init_deepseek():
     from openai import AsyncOpenAI
     global deepseek_client
     if deepseek_client is None:
-        deepseek_client = AsyncOpenAI(api_key="sk-3z4y46KjqcLSie0hmgVC5JTMNIVUDLPxvYPu8sknbqLPowuH", base_url="https://api.lkeap.cloud.tencent.com/v1",)
+        deepseek_client = AsyncOpenAI(api_key="YOUR-API-KEY", base_url="https://api.lkeap.cloud.tencent.com/v1",)
         # print("Client Successfully Initialized...")
 
 async def parallel_deepseek_text_completion(
